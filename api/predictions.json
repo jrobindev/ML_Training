@@ -9,5 +9,16 @@
       "upper": 658118
     },
     "timestamp": "2025-11-11T17:23:05.246Z"
+  },
+  {
+    "id": "57fbb56d-c740-4855-bbd3-33144bc82789",
+    "sqft": 2000,
+    "bedrooms": 2,
+    "prediction": 310855,
+    "confidenceInterval": {
+      "lower": 279770,
+      "upper": 341941
+    },
+    "timestamp": "2025-11-11T17:31:58.115Z"
   }
 ]

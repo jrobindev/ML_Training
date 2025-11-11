@@ -3,10 +3,10 @@ const Header = () => {
     <div className="flex justify-between items-center py-4">
       <div>
         <h1 className="text-3xl font-bold text-gray-900">
-          🏠 Housing Price Predictor
+          Housing Price Predictor
         </h1>
         <p className="text-sm text-gray-600 mt-1">
-          ML-powered price predictions
+          Geviti Assessment, Housing Price predictions
         </p>
       </div>
     </div>
