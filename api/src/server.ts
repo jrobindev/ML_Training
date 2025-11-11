@@ -9,6 +9,7 @@ import rateLimit from 'express-rate-limit';
 import logger from './config/logger';
 import routes from './routes';
 import { errorHandler, notFound } from './middleware/ErrorHandler';
+import { initializeModel } from './controllers/PredictionController';
 
 // Load environment variables
 dotenv.config();
@@ -63,7 +64,16 @@ app.use(errorHandler);
 let modelReady = false;
 console.log('Initializing model...', modelReady);
 
-
+(async () => {
+  try {
+    await initializeModel();
+    modelReady = true;
+    logger.info('Model initialization complete');
+  } catch (error) {
+    logger.error('Failed to initialize model:', error);
+    process.exit(1);
+  }
+})();
 
 // Graceful shutdown
 const gracefulShutdown = (signal: string) => {
