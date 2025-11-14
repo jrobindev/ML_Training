@@ -1,9 +1,9 @@
-# geviti-ml_training-assessment
+# ML_Training
 
 
-# Housing Price Predictor by Jacoby Robinson
+# Housing Price Predictor
 
-A robust, production-ready full-stack web application that predicts housing prices using machine learning. Built with TypeScript by Jacoby Robinson.
+A robust, production-ready full-stack web application that predicts housing prices using machine learning. Built with TypeScript.
 
 ## Tech Stack
 
@@ -85,10 +85,6 @@ The backend follows the **Model-View-Controller (MVC)** pattern with clear separ
 ### Quick Setup
 
 ```bash
-# Clone repository
-git clone https://github.com/jrobindev/geviti-ml_training-assessment
-cd geviti-ml_training-assessment
-
 # API setup
 cd api
 npm install
